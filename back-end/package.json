@@ -26,7 +26,8 @@
     "knex": "knex",
     "migrate": "knex migrate:latest",
     "seed": "knex seed:run",
-    "rollback": "knex migrate:rollback"
+    "rollback": "knex migrate:rollback",
+    "publishToHeroku": "cd ../ && git subtree push --prefix back-end heroku master || true"
   },
   "keywords": [],
   "author": "",
