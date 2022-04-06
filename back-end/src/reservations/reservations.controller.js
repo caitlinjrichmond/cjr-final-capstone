@@ -211,8 +211,7 @@ function isRestaurantOpen(req, res, next) {
   } = req.body;
 
   let fullResDate = new Date(reservation_date);
-  let convertedDate = convertUTCDateToLocalDate(fullResDate)
-  console.log(convertedDate.getDay() !== 2)
+  let convertedDate = convertUTCDateToLocalDate(fullResDate);
 
   if (convertedDate.getDay() !== 2) {
     return next();
