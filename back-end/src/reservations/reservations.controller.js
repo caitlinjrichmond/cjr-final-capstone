@@ -193,7 +193,6 @@ function timeFrameIsElligble(req, res, next) {
 }
 
 // Ensures a reservation cannot be made on a Tues --> used with create
-
 function convertUTCDateToLocalDate(date) {
   let newDate = new Date(date.getTime()+date.getTimezoneOffset()*60*1000);
 
